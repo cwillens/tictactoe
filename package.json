@@ -1,0 +1,23 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cwillens/tictactoe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cwillens/tictactoe/issues"
+  },
+  "homepage": "https://github.com/cwillens/tictactoe#readme",
+  "dependencies": {
+    "fibers": "^1.0.15",
+    "nicl": "^0.1.2"
+  }
+}
