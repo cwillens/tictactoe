@@ -1,6 +1,6 @@
 var nicl = require ("nicl");
 
-//I didnt have time to count a diagonal win, or write a readme 
+//I didnt have time to write a readme 
 function main() {
 
   var board = [['_', '_', '_'], ['_', '_', '_'], ['_', '_', '_']];
@@ -32,6 +32,14 @@ function main() {
     } 
 
     if (board[0][col] === character && board[1][col] === character && board[2][col] === character) {
+      return true;
+    } 
+
+    if (board[0][0] === character && board[1][1] === character && board[2][2] === character) {
+      return true;
+    } 
+
+    if (board[0][2] === character && board[1][1] === character && board[2][0] === character) {
       return true;
     } 
 
