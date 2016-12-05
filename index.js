@@ -1,9 +1,11 @@
 var nicl = require ("nicl");
 
- 
+//I didnt have time to count a diagonal win, or write a readme 
 function main() {
 
   var board = [['_', '_', '_'], ['_', '_', '_'], ['_', '_', '_']];
+
+  console.log('Welcome to tic tac toe. Submit moves in the form row,col (for example, top left corner of the board is 0,0)');
 
   var displayBoard = function(board) {
     var display = '' + board[0][0] + ' ' + board[0][1] + ' ' + board[0][2] + '\n' + 
@@ -20,7 +22,6 @@ function main() {
     var moveRow = Number(move[0]);
     var moveCol = Number(move[2]);
     board[moveRow][moveCol] = character;
-    displayBoard(board);
     return [moveRow, moveCol];
   }
 
@@ -34,9 +35,7 @@ function main() {
       return true;
     } 
 
-    // if (board[][col] === character && board[1][col] === character && board[2][col] === character) {
-    //   return true;
-    // } 
+    
     return false;
   }
 
